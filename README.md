@@ -13,3 +13,5 @@ Partendo dal markup della versione svolta in js plain, rifare lo slider ma quest
 2. creo un contatore
 3. con un ciclo v-for stampiamo tutte le immagini
 4. collego il contatore all'immagine
+5. al click delle frecce aumentiamo o diminuiamo il counter
+6. 

@@ -17,8 +17,8 @@
     <main>
       <div class="container-ol d-flex justify-content-center align-items-center  ">
         <div class="colonna-0 position-relative d-flex ">
-          <button class="button-ol d-flex align-items-center justify-content-center button-su"> &#11165; </button>
-          <button class="button-ol d-flex align-items-center justify-content-center button-giu"> &#11167; </button>
+          <button @click="counter--" class="button-ol d-flex align-items-center justify-content-center button-su"> &#11165; </button>
+          <button @click="counter++" class="button-ol d-flex align-items-center justify-content-center button-giu"> &#11167; </button>
           <div class="colonna-1   immagine">
             <img :src="imgs[counter].img" alt="">
           </div>
