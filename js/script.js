@@ -30,11 +30,22 @@ createApp({
           descrizione: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, nemo."
         }
         ],
-        counter: 0,  
+        counter: 0,
+
     }
   },
   methods: {
-      
+      loopColonnine(){
+        if (this.counter < 0) {
+          this.counter = this.imgs.length - 1
+        }else if(this.counter > this.imgs.length - 1){
+          this.counter = 0
+        }
+        console.log(this.counter);
+      }
+  },
+
+  mounted(){
   }
 }).mount("#app")
 

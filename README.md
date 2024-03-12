@@ -14,4 +14,4 @@ Partendo dal markup della versione svolta in js plain, rifare lo slider ma quest
 3. con un ciclo v-for stampiamo tutte le immagini
 4. collego il contatore all'immagine
 5. al click delle frecce aumentiamo o diminuiamo il counter
-6. 
+6. con un if quando il counter sara superiore alla lunghezza dell'array si resetta a zero
