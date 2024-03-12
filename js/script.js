@@ -32,26 +32,27 @@ createApp({
         ],
         counter: 0,
         booleane: true,
-        booleaneOver: false
+        booleaneReverse: true
     }
   },
   methods: {
       loopColonnine(booleane){
         booleane ? this.counter++ : this.counter--  
-
+        
         if (this.counter < 0) {
           this.counter = this.imgs.length - 1
         }else if(this.counter > this.imgs.length - 1){
           this.counter = 0
         }
+
       },
 
       autoplay(booleane){
         setInterval(()=>{
           if (this.booleane) {
-            this.loopColonnine(true)
+            this.loopColonnine(this.booleaneReverse)
           }
-        }, 1000)
+        }, 3000)
       },
       
   },
