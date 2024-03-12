@@ -17,7 +17,8 @@
     <main>
       <div class="container-ol d-flex justify-content-center align-items-center  ">
         <div class="colonna-0 position-relative d-flex ">
-          <!-- aggiunto il counter++/-- per cambiare le immagini -->
+          <!-- aggiunto il counter++/-- per cambiare le immagini.
+          aggiungo la funzione per il loop -->
           <button @click="counter--, loopColonnine()" class="button-ol d-flex align-items-center justify-content-center button-su"> &#11165; </button>
           <button @click="counter++, loopColonnine()" class="button-ol d-flex align-items-center justify-content-center button-giu"> &#11167; </button>
           <div class="colonna-1   immagine">
@@ -26,7 +27,7 @@
           </div>
           <div class="colonna-2  immagine">
             <!-- aggiunto ciclo v-for per stampare tutte le immagini piccole -->
-            <div class="colonnine"><img v-for="(img, index) in imgs" :class="{'active' : counter === index }"  class="img-small trasparente imgclick" :src="img.img" alt=""></div>
+            <div class="colonnine"><img v-for="(img, index) in imgs" @click="counter = index" :class="{'active' : counter === index }"  class="img-small trasparente imgclick" :src="img.img" alt=""></div>
           </div>
         </div>
       </div>

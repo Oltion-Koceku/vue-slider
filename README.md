@@ -15,3 +15,5 @@ Partendo dal markup della versione svolta in js plain, rifare lo slider ma quest
 4. collego il contatore all'immagine
 5. al click delle frecce aumentiamo o diminuiamo il counter
 6. con un if quando il counter sara superiore alla lunghezza dell'array si resetta a zero
+7. al click della thumb si attiva la colonnina
+8. con il @click il counter diventa uguale all'index
