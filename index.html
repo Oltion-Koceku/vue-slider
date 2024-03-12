@@ -15,8 +15,8 @@
 <body>
   <div id="app">
     <main>
-      <div class="container-ol d-flex justify-content-center align-items-center  ">
-        <div class="colonna-0 position-relative d-flex ">
+      <div  class="container-ol d-flex justify-content-center align-items-center  ">
+        <div @mouseover="booleane = false" @mouseleave="booleane = true" class="colonna-0 position-relative d-flex ">
           <!-- aggiunto il counter++/-- per cambiare le immagini.
           aggiungo la funzione per il loop -->
           <button @click="loopColonnine(false)" class="button-ol d-flex align-items-center justify-content-center button-su"> &#11165; </button>

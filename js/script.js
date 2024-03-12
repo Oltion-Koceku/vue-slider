@@ -31,7 +31,8 @@ createApp({
         }
         ],
         counter: 0,
-        booleane: true
+        booleane: true,
+        booleaneOver: false
     }
   },
   methods: {
@@ -47,15 +48,12 @@ createApp({
 
       autoplay(booleane){
         setInterval(()=>{
-          if (booleane) {
+          if (this.booleane) {
             this.loopColonnine(true)
-          }else{
-            
-            this.loopColonnine(false)
           }
         }, 1000)
-      }
-
+      },
+      
   },
 
   mounted(){
