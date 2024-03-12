@@ -31,21 +31,35 @@ createApp({
         }
         ],
         counter: 0,
-
+        booleane: true
     }
   },
   methods: {
-      loopColonnine(){
+      loopColonnine(booleane){
+        booleane ? this.counter++ : this.counter--  
+
         if (this.counter < 0) {
           this.counter = this.imgs.length - 1
         }else if(this.counter > this.imgs.length - 1){
           this.counter = 0
         }
-        console.log(this.counter);
+      },
+
+      autoplay(booleane){
+        setInterval(()=>{
+          if (booleane) {
+            this.loopColonnine(true)
+          }else{
+            
+            this.loopColonnine(false)
+          }
+        }, 1000)
       }
+
   },
 
   mounted(){
+    this.autoplay(this.booleane)
   }
 }).mount("#app")
 

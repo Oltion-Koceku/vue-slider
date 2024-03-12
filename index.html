@@ -19,8 +19,8 @@
         <div class="colonna-0 position-relative d-flex ">
           <!-- aggiunto il counter++/-- per cambiare le immagini.
           aggiungo la funzione per il loop -->
-          <button @click="counter--, loopColonnine()" class="button-ol d-flex align-items-center justify-content-center button-su"> &#11165; </button>
-          <button @click="counter++, loopColonnine()" class="button-ol d-flex align-items-center justify-content-center button-giu"> &#11167; </button>
+          <button @click="loopColonnine(false)" class="button-ol d-flex align-items-center justify-content-center button-su"> &#11165; </button>
+          <button @click="loopColonnine(true)" class="button-ol d-flex align-items-center justify-content-center button-giu"> &#11167; </button>
           <div class="colonna-1   immagine">
             <!-- con img[counter] aggiungiamo solo l'immagine che è collegata al counter -->
             <img :src="imgs[counter].img" alt="">
