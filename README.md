@@ -11,4 +11,5 @@ Partendo dal markup della versione svolta in js plain, rifare lo slider ma quest
 ## Svolgimento:
 1. collego VUE
 2. creo un contatore
-3. collego il contatore all'immagine
+3. con un ciclo v-for stampiamo tutte le immagini
+4. collego il contatore all'immagine

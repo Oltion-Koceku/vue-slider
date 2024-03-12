@@ -29,7 +29,8 @@ createApp({
           img: "assets/img/05.webp",
           descrizione: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, nemo."
         }
-        ]
+        ],
+        counter: 0,  
     }
   },
   methods: {

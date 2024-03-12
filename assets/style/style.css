@@ -49,19 +49,19 @@ height: 100%;
 width: 200px;
 }
 
+div .active{
+  border: 2px solid white;
+  filter: none;
+}
+
 .trasparente{
   filter: brightness(0.4);
 }
 
-.colonnine-1,
-.colonnine-2,
-.colonnine-3,
-.colonnine-4,
-.colonnine-5{
+.colonnine{
   height: calc(350px / 5);
 }
 .bordo-bianco{
-border: 2px solid white;
 }
 
 .descrizione{

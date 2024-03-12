@@ -20,10 +20,10 @@
           <button class="button-ol d-flex align-items-center justify-content-center button-su"> &#11165; </button>
           <button class="button-ol d-flex align-items-center justify-content-center button-giu"> &#11167; </button>
           <div class="colonna-1   immagine">
-            <img src="assets/img/01.webp" alt="">
+            <img :src="imgs[counter].img" alt="">
           </div>
           <div class="colonna-2  immagine">
-            <div class="colonnine-1"><img class="img-small trasparente imgclick" src="assets/img/01.webp" alt=""></div>
+            <div class="colonnine"><img v-for="(img, index) in imgs" :class="{'active' : counter === index }"  class="img-small trasparente imgclick" :src="img.img" alt=""></div>
           </div>
         </div>
       </div>
